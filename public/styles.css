@@ -1,0 +1,22 @@
+/* Alima Zaman */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:rgb(216, 235, 250);
+}
+.container {
+    text-align: center;
+}
+input, button {
+    padding: 10px;
+    margin: 5px;
+}
+#jokeContainer {
+    margin-top: 20px;
+    font-size: large;
+}

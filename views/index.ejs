@@ -1,0 +1,28 @@
+<!-- Alima Zaman-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <link rel="stylesheet" href="/styles.css"> <!--link to css file-->
+</head>
+<body>
+    <div class="container">
+        <h1>WANNA HEAR A JOKE?</h1>
+        <form id="jokeForm" method="POST" action="/get-joke"> <!--form for submitting name-->
+            <!--place for user to input name-->
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <button type="submit">Get Joke</button><!--submit button-->
+        </form>
+        <div id="jokeContainer">
+            <% if (typeof joke !== 'undefined') { %><!--check if joke is defined-->
+                <%= joke %><!--display joke-->
+            <% } else { %>
+                No joke available<!--display no joke available-->
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
